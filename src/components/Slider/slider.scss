@@ -1,0 +1,36 @@
+.slider-container {
+  margin: 0 32px;
+}
+
+.content {
+  max-width: 600px;
+  display: block;
+  text-align: center;
+
+  &__title {
+    font-family: Helvetica;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 83px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__button {
+    padding: 16px 32px;
+    font-size: 18px;
+    width: 236px;
+  }
+}

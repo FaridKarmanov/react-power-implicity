@@ -1,0 +1,25 @@
+.container {
+  margin: 32px 32px 0px;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  &__item-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__button {
+    font-size: 14px;
+    width: 159px;
+    padding: 16px 24px;
+    border-radius: 999px;
+  }
+}
