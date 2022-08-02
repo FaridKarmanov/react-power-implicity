@@ -1,25 +1,48 @@
-.container {
-  margin: 32px 32px 0px;
-}
+@import "../../index.scss";
 
 .nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 32px;
+
+  @include mobile {
+    grid-template-columns: 25% 50% 25%;
+  }
 
   &__item-link {
     text-decoration: none;
-    color: black;
+    font-size: 14px;
+    line-height: 16px;
+    color: #a0a3a7;
+    margin: 0px 32px;
+
+    @include mobile {
+      font-size: 9px;
+      margin: 0px 5px;
+    }
   }
 
   &__list {
     display: flex;
-    list-style-type: none;
+    justify-content: space-between;
+    justify-self: center;
+    align-self: center;
+    list-style: none;
   }
 
   &__button {
-    font-size: 14px;
-    width: 159px;
-    padding: 16px 24px;
+    background: linear-gradient(93.22deg, #e1e1e1 8.37%, #ffffff 99.95%);
+    box-shadow: 0px 4px 50px rgba(37, 37, 37, 0.08),
+      inset 1px 1px 1px rgba(135, 135, 135, 0.32);
     border-radius: 999px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px 15px;
+    justify-self: end;
+
+    @include mobile {
+      padding: 3px 8px;
+      font-size: 8px;
+    }
   }
 }
